@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./script.js" defer></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+     <!-- Dark/Light Mode Toggle -->
+     <div class="theme-toggle">
+        <i class="fas fa-moon" id="theme-icon"></i>
+    </div>
+    
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div class="logo">
+            
+            <span class="java">Java Full-Stack Developer</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        
+    </nav>
+
+     <!-- About Me -->
+     <section id="about-me" class="container">
+        <div  class="img-container">
+          <img src="./assets/cropped-image.png" class="profile_image"/>
+        </div>
+  
+        <div>
+            <h1>
+              Hi, I'm Sathish! <img src="./assets/waving-hand.png" width="30px"/>
+            </h1>
+            <p class="about">
+            
+                I'm a Full Stack Developer with experience in building web applications using React, Spring Boot, and MySQL. I specialize in creating interactive user interfaces and scalable backend services. Let's work together to build something amazing!</p>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js-square"></i>
+                    <h3>JavaScript</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <!-- Backend Skills -->
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <h3>Java</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 95%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Spring Boot</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 90%;"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <h3>MySQL</h3>
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 85%;"></div>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+
+   
+
+    
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <h3>E-Commerce Platform</h3>
+                    <p>Built a scalable e-commerce platform using React, Spring Boot, and MySQL. Implemented user authentication, product search, and payment integration.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3>Task Management App</h3>
+                    <p>Developed a task management app with React and Spring Boot. Features include task creation, assignment, and real-time updates.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h3>Blogging Platform</h3>
+                    <p>Created a blogging platform using React, Node.js, and MongoDB. Supports CRUD operations, user comments, and likes.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+        <h1>Testimonials</h1>
+        <blockquote>
+            "Sathish is an excellent developer with a keen eye for detail and a passion for solving complex problems."
+            <cite>- Sathish, junior Developer</cite>
+        </blockquote>
+        <!-- Add more testimonials similarly -->
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
+            <div class="contact-links">
+                <a href="mailto:sathishsr974@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
+                <a href="https://www.linkedin.com/in/yourprofile" class="btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/yourprofile" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="resume.pdf" download class="btn" class="change">Download Resume</a>
+            </div>
+        </div>
+    </section>
+    <!-- cotact -->
+   
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sathish. All rights reserved.</p>
+    </footer>
+</body>
+</html>
