@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: hwb(240 90% 6% / 0.589);
+    background-color: hsl(240, 90%, 96%);
     color: #333;
     transition: background-color 0.5s, color 0.5s;
 }
@@ -349,9 +349,40 @@ body {
     }
 }
 
-@media (max-width: 768px) { /* Tablets & Mobile */
+/* Laptops (1024px and below) */
+@media (max-width: 1024px) {
+    #navbar {
+        flex-direction: column;
+        padding: 1rem;
+        text-align: center;
+    }
+
     .nav-links {
-        display: none;
+        gap: 1.5rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for laptops */
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr; /* Single column for better readability */
+    }
+
+    .contact-form {
+        grid-template-columns: 1fr; /* Single column for forms */
+    }
+
+    .img-container {
+        width: 180px;
+        height: 180px; /* Slightly smaller image for laptops */
+    }
+}
+
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide nav links by default */
         flex-direction: column;
         position: absolute;
         top: 70px;
@@ -362,25 +393,56 @@ body {
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         transition: right 0.3s;
     }
-    
+
     .logo span {
-        display: none;
+        display: none; /* Hide logo text for smaller screens */
     }
+
     .skills-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column for tablets */
     }
+
     .projects-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column for tablets */
     }
+
     .contact-form {
         grid-template-columns: 1fr;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: center; /* Center form elements */
     }
+
     .img-container {
         width: 200px;
-        height: 200px;
+        height: 200px; /* Larger image for tablets */
     }
 }
 
+/* Mobile Devices (480px and below) */
+@media (max-width: 480px) {
+    #navbar {
+        padding: 0.5rem; /* Smaller padding for mobile */
+    }
+
+    .nav-links {
+        top: 60px; /* Adjust position for mobile */
+    }
+
+    .skills-grid {
+        gap: 0.5rem; /* Reduce gap between skill items */
+    }
+
+    .projects-grid {
+        gap: 1rem; /* Reduce gap between project items */
+    }
+
+    .contact-form {
+        gap: 1rem; /* Reduce gap between form fields */
+    }
+
+    .img-container {
+        width: 150px;
+        height: 150px; /* Smaller image for mobile */
+    }
+}
