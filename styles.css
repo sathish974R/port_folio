@@ -500,7 +500,7 @@ body {
 /* Mobile Devices (480px and below) */
 @media  (max-width: 480px){
     body{
-        font-size: 16px;
+        font-size: 14px;
     }
     .theme-toggle {
         bottom: 10px;
@@ -516,9 +516,12 @@ body {
     .java-logo{
         font-size: 1.2rem;
     }
-    
+
+
+
+       
     .nav-links {
-        display:none;
+        display: none;
         position: absolute;
         top: 60px;
         left: 0;
@@ -530,17 +533,31 @@ body {
         border-radius: 0 0 10px 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     }
-    .hamburger {
-        display: flex;
-    }
     .nav-links li {
         text-align: center;
     }
     .nav-links a {
         color: #fff;
     }
+    /* Show Hamburger Menu */
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    /* Hamburger Menu Animation */
     .hamburger.active .line:nth-child(1) {
         transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+        transform: rotate(-45deg) translate(5px, -5px);
     }
     .section {
         padding: 1rem;
@@ -550,6 +567,7 @@ body {
         flex-direction: column;
         padding: 1rem;
     }
+
     .img-container {
         width: 150px;
         height: 150px;
@@ -562,7 +580,7 @@ body {
         font-size: 0.9rem;
     }
     .skills-grid {
-        grid-template-columns: 2fr ;
+        grid-template-columns: 1fr;
     }
     .skill-item {
         padding: 0.5rem;
@@ -608,6 +626,7 @@ body {
     .recommend-input-textarea {
         height: 80px;
         width: 90%;
+        
     }
     .recommendation-form-footer {
         flex-direction: column;
@@ -624,12 +643,17 @@ body {
         display: inline flex;
         flex-direction: column;
         gap: 0.5rem;
+        
     }
     footer {
         font-size: 0.8rem;
     }
 
+
     
+        
+
+
 }
 
 /* Tablets (768px and below) */
