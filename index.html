@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" target="blank">
     
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -21,25 +21,35 @@
             
             <span class="java">Java Full-Stack Developer</span>
         </div>
+          
+        
+
         <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about" onclick="toggleNav()" >About Me</a></li>
+            <li><a href="#skills" onclick="toggleNav()" >Skills</a></li>
+            <li><a href="#projects" onclick="toggleNav()">Projects</a></li>
+            <li><a href="#testimonials" onclick="toggleNav()">Testimonials</a></li>
+            <li><a href="#contact" onclick="toggleNav()">Contact</a></li>
         </ul>
+        <!--Hamburger Menu -->
+          <div class="hamburger" onclick="toggleNav()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+         </div>
+                
         
     </nav>
 
      <!-- About Me -->
      <section id="about-me" class="container">
         <div  class="img-container">
-          <img src="./assets/cropped-image.png" class="profile_image"/>
+          <img src="./assets/cropped-image.png" class="profile_image" alt="blank"/>
         </div>
   
         <div>
             <h1>
-              Hi, I'm Sathish! <img src="./assets/waving-hand.png" width="30px"/>
+              Hi, I'm Sathish! <img src="./assets/waving-hand.png" width="30px" alt="blank"/>
             </h1>
             <p class="about">
             
@@ -57,28 +67,28 @@
                     <i class="fab fa-react"></i>
                     <h3>React</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
+                        <div class="progress" ></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-js-square"></i>
                     <h3>JavaScript</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
+                        <div class="progress"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-html5"></i>
                     <h3>HTML</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 95%;"></div>
+                        <div class="progress" ></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <i class="fab fa-css3-alt"></i>
                     <h3>CSS</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
+                        <div class="progress" ></div>
                     </div>
                 </div>
                 <!-- Backend Skills -->
@@ -86,21 +96,21 @@
                     <i class="fab fa-java"></i>
                     <h3>Java</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 95%;"></div>
+                        <div class="progress" ></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-leaf"></i>
                     <h3>Spring Boot</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 90%;"></div>
+                        <div class="progress"></div>
                     </div>
                 </div>
                 <div class="skill-item">
                     <i class="fas fa-database"></i>
                     <h3>MySQL</h3>
                     <div class="progress-bar">
-                        <div class="progress" style="width: 85%;"></div>
+                        <div class="progress" ></div>
                     </div>
                 </div>
                 
@@ -109,6 +119,75 @@
         </div>
     </section>
 
+
+    <!-- Tools Section -->
+
+    <section id="tools" class="section">
+        <div class="container">
+            <h2>Tools</h2>
+            <div class="skills-grid">
+                <!-- Frontend Skills -->
+                <div class="skill-item ">
+                    <i><img src="./assets/vscode.png" alt="blank" class="vscode"></i>
+                    
+                    <h3>Visual Studio Code</h3>
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i ><img src="./assets/postman.png" alt="blank" class="postman"></i>
+                    <h3>Postman</h3>
+                    <div class="progress-bar">
+
+                        <div class="progress"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-git"></i>
+                    <h3>Git</h3>
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-github"></i>
+                    <h3>GitHub</h3>
+                   
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                    </div>
+                </div>
+                <!-- Backend Skills -->
+                <div class="skill-item">
+                    <i><img src="./assets/Postgresql_elephant.png" alt="blank" class="postgresql"></i>
+                    <h3>postgresql </h3>
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i><img src="./assets/IntelliJ_IDEA_Icon.png" alt="blank" class="ide"></i>
+                    <h3>Intellij Idea</h3>
+                    <div class="progress-bar">
+                        <div class="progress"></div>
+                    </div>      
+                </div>
+                <div class="skill-item">
+                    <i><img src="./assets/eclipseIde.png" alt="blank" class="eclipse"></i>
+                    <h3>Eclipse</h3>
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <i><img src="./assets/netlify-svgrepo-com.svg" alt="blank" class="netlify"></i>
+                    <h3>Netlify</h3>
+                    <div class="progress-bar">
+                        <div class="progress" ></div>
+                    </div>  
+                </div>
+            </div>  
    
 
     
@@ -186,7 +265,7 @@
 
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section" >
         <div class="container">
             <h2>Contact Me</h2>
             <p>If you'd like to get in touch, feel free to reach out via email or connect with me on LinkedIn.</p>
@@ -194,7 +273,7 @@
                 <a href="mailto:sathishsr974@gmail.com" class="btn"><i class="fas fa-envelope"></i> Email</a>
                 <a href="https://www.linkedin.com/in/yourprofile" class="btn" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 <a href="https://github.com/yourprofile" class="btn" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                <a href="resume.pdf" download class="btn" class="change">Download Resume</a>
+                <a href="resume.pdf" download class="btn" >Download Resume</a>
             </div>
         </div>
     </section>
@@ -204,6 +283,6 @@
     <footer>
         <p>&copy; 2025 Sathish. All rights reserved.</p>
     </footer>
-    <script src="./script.js" ></script>
+    <script src="./script.js"  ></script>
 </body>
 </html>
