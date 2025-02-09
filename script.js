@@ -18,4 +18,23 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 });
-  
+
+document.addEventListener("DOMContentLoaded", function () { 
+    document.getElementById('recom-btn').addEventListener('click', function (e) {
+        e.preventDefault(); // Prevent default action
+
+        // Get input values
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const message = document.getElementById('message').value; // Fixed ID
+
+        // Check if fields are empty
+        if (name === '' || email === '' || message === '') {
+            alert('Please fill in all fields');
+        } else {  
+            alert('Thank you for your recommendation!');
+            document.getElementById('recommendation-form').reset();
+        }   
+    });
+});
+   

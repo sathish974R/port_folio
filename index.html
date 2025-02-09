@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
+    
     <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -141,6 +141,15 @@
                         <a href="#" class="btn">GitHub</a>
                     </div>
                 </div>
+
+                <div class="project-item">
+                    <h3>Chat App</h3>
+                    <p>Created a blogging platform using React, Node.js, and mysql. Supports CRUD operations, user comments, and likes.</p>
+                    <div class="project-links">
+                        <a href="#" class="btn">Live Demo</a>
+                        <a href="#" class="btn">GitHub</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -154,6 +163,27 @@
         </blockquote>
         <!-- Add more testimonials similarly -->
     </section>
+
+
+       <!-- Recommendation Form -->
+       <section id="recommendation-form" class="section">
+        <div class="container-recommendation">
+            <fieldset class="recommendation-form">
+                <legend class="message">Leave a Recommendation</legend>          
+                <input type="text" placeholder="Name (Optional)" class="recommend-input" id="name"> <br/> 
+                <input type="email" placeholder="Email (Optional)" class="recommend-input" id="email"> <br/>
+                <textarea placeholder="Write your recommendation here..." class="recommend-input-textarea" id="message"></textarea>
+                <div class="recommendation-form-footer">
+                    <button id="recom-btn">Submit</button>
+                </div>
+            </fieldset>
+        </div>
+    </section>
+    <!-- Recommendation Form -->    
+
+
+
+
 
     <!-- Contact Section -->
     <section id="contact" class="section">
@@ -174,5 +204,6 @@
     <footer>
         <p>&copy; 2025 Sathish. All rights reserved.</p>
     </footer>
+    <script src="./script.js" ></script>
 </body>
 </html>
