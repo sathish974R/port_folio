@@ -45,4 +45,15 @@ function toggleNav() {
     navLinks.classList.toggle('active');
     hamburger.classList.toggle('active');
 }
+
+const typingEffect = new Typed(".typed", {
+    strings: ["Full Stack Developer"],
+    loop: true,
+    typeSpeed: 100,
+    backSpeed: 80,
+    backDelay: 2000
+});
+
+
+  
    
