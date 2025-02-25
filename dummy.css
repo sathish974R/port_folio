@@ -1,0 +1,146 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+    color: hsla(0, 0%, 0%, 0.8); /* Semi-transparent black */
+    transition: background-color 0.5s, color 0.5s;
+}
+
+/* Theme Toggle */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: hsla(0, 0%, 0%, 0.8); /* Semi-transparent black */
+    color: #fff;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.theme-toggle:hover {
+    background-color: hsla(211, 100%, 50%, 0.8); /* Semi-transparent blue */
+    transform: scale(1.05);
+}
+
+/* Navbar */
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: hsla(211, 100%, 50%, 0.8); /* Semi-transparent blue */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links a {
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: hsla(120, 100%, 50%, 0.6); /* Semi-transparent green */
+}
+
+/* Sections */
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+    background-color: hsla(0, 0%, 100%, 0.8); /* Semi-transparent white */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s;
+}
+
+section:hover {
+    background-color: hsla(0, 0%, 100%, 0.9); /* Slightly more opaque white */
+}
+
+/* About Me Section */
+#about-me {
+    background-color: hsla(120, 100%, 50%, 0.1); /* Very light semi-transparent green */
+    border: 1px solid hsla(120, 100%, 50%, 0.2); /* Light green border */
+}
+
+.dark-mode #about-me {
+    background-color: hsla(0, 0%, 0%, 0.5); /* Semi-transparent black */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+/* Skills Section */
+.skill-item {
+    background-color: hsla(0, 0%, 100%, 0.8); /* Semi-transparent white */
+    border: 1px solid hsla(211, 100%, 50%, 0.2); /* Light blue border */
+}
+
+.skill-item:hover {
+    background-color: hsla(211, 100%, 50%, 0.1); /* Very light semi-transparent blue */
+}
+
+.dark-mode .skill-item {
+    background-color: hsla(0, 0%, 0%, 0.5); /* Semi-transparent black */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+/* Projects Section */
+.project-item {
+    background-color: hsla(0, 0%, 100%, 0.8); /* Semi-transparent white */
+    border: 1px solid hsla(211, 100%, 50%, 0.2); /* Light blue border */
+}
+
+.dark-mode .project-item {
+    background-color: hsla(0, 0%, 0%, 0.5); /* Semi-transparent black */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+/* Testimonials */
+blockquote {
+    background-color: hsla(0, 0%, 100%, 0.8); /* Semi-transparent white */
+    border-left: 5px solid hsla(211, 100%, 50%, 0.8); /* Semi-transparent blue */
+}
+
+.dark-mode blockquote {
+    background-color: hsla(0, 0%, 0%, 0.5); /* Semi-transparent black */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+/* Recommendation Form */
+#recommendation-form {
+    background-color: hsla(0, 0%, 100%, 0.8); /* Semi-transparent white */
+    border: 1px solid hsla(211, 100%, 50%, 0.2); /* Light blue border */
+}
+
+.dark-mode #recommendation-form {
+    background-color: hsla(0, 0%, 0%, 0.5); /* Semi-transparent black */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+/* Footer */
+footer {
+    background-color: hsla(211, 100%, 50%, 0.8); /* Semi-transparent blue */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: hsla(0, 0%, 20%, 0.9); /* Semi-transparent dark gray */
+    color: hsla(0, 0%, 100%, 0.9); /* Semi-transparent white */
+}
+
+body.dark-mode #navbar {
+    background-color: hsla(0, 0%, 0%, 0.8); /* Semi-transparent black */
+}
+
+body.dark-mode section {
+    background-color: hsla(0, 0%, 20%, 0.8); /* Semi-transparent dark gray */
+}
+
+body.dark-mode footer {
+    background-color: hsla(0, 0%, 0%, 0.8); /* Semi-transparent black */
+}
